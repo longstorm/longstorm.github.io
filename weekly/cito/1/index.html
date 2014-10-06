@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- This site was created in Webflow. http://www.webflow.com-->
-<!-- Last Published: Mon Oct 06 2014 19:00:58 GMT+0000 (UTC) -->
+<!-- Last Published: Mon Oct 06 2014 23:07:13 GMT+0000 (UTC) -->
 <html data-wf-site="542f1b15fcacab585b73924a" data-wf-page="543293d450bc361265fc37d3">
 <head>
   <meta charset="utf-8">
@@ -40,7 +40,7 @@
           <div class="show-label"><span class="weekly-subtitle">weekly</span>
           </div>
           <ul class="w-list-unstyled source-show-list left-list">
-            <li class="task-container"><a class="task-project-link brace brace-left" href="#"><strong>#{</strong></a><a class="task-project-link date" href="#">1</a><a class="task-project-link brace brace-right" href="#"><strong>}</strong></a><a class="task-project-link date" href="#">October 6th, 2014</a>
+            <li class="w-hidden-main w-hidden-medium task-container"><a class="task-project-link brace brace-left" href="#"><strong>#{</strong></a><a class="task-project-link date" href="#">1</a><a class="task-project-link brace brace-right" href="#"><strong>}</strong></a><a class="task-project-link date" href="#">October 6th, 2014</a>
               <div
               class="w-container source-show-line-w">
                 <div class="source-show-line"></div>
@@ -85,7 +85,7 @@
         <li class="task-container shout-out-box">
           <div class="shout-out-text">Shout out to live musicians: open source Overtone compositions wanted for featuring. Contact information at the bottom.</div>
         </li>
-        <li class="task-container"><a class="task-project-link" href="https://github.com/richardharrington/robotwar">richardharrington/robotwar</a>
+        <li class="task-container"><a class="task-project-link task-project-link-smaller" href="https://github.com/richardharrington/robotwar">richardharrington/robotwar</a>
           <div class="w-container source-show-line-w">
             <div class="source-show-line"></div>
           </div>
@@ -105,7 +105,7 @@
         <li class="task-container task-section">
           <h1>cljs</h1>
         </li>
-        <li class="task-container"><a class="task-project-link" href="https://github.com/gcv/dgraph">gcv/dgraph</a>
+        <li class="task-container task-container-pre-subhead"><a class="task-project-link" href="https://github.com/gcv/dgraph">gcv/dgraph</a>
           <div class="w-container source-show-line-w">
             <div class="source-show-line"></div>
           </div>
@@ -142,7 +142,10 @@
         <li class="task-container task-section">
           <h1 class="w-hidden-main">database</h1>
         </li>
-        <li class="w-hidden-main task-container"><a class="task-project-link" href="https://github.com/mwmitchell/flux">mwmitchell/flux</a>
+        <li class="w-hidden-medium w-hidden-small w-hidden-tiny task-container">
+          <h1>database</h1>
+        </li>
+        <li class="task-container task-container-pre-subhead"><a class="task-project-link" href="https://github.com/mwmitchell/flux">mwmitchell/flux</a>
           <div class="w-container source-show-line-w">
             <div class="source-show-line"></div>
           </div>
@@ -158,7 +161,7 @@
             </div>
           </a>
         </li>
-        <li class="w-hidden-main task-container"><a class="task-project-link" href="https://github.com/edlich/clarango">edlich/clarango</a>
+        <li class="task-container"><a class="task-project-link" href="https://github.com/edlich/clarango">edlich/clarango</a>
           <div class="w-container source-show-line-w">
             <div class="source-show-line"></div>
           </div>
@@ -169,17 +172,30 @@
                 <div class="task-checkbox-todo"></div>
               </div>
               <div class="w-col w-col-11 w-col-small-11 w-col-tiny-11">
-                <div class="task-issue-link">Implement User Management Functions&nbsp;(#7)</div>
+                <div class="task-issue-link task-issue-link-larger">Implement User Management Functions&nbsp;(#7)</div>
               </div>
             </div>
           </a>
         </li>
-        <li class="w-hidden-medium w-hidden-small w-hidden-tiny task-container"><a class="task-project-link" href="https://github.com/wagjo/serialization-formats">wagjo/serialization-formats</a>
+        <li class="w-hidden-small w-hidden-tiny task-container shout-out-box">
+          <div class="w-hidden-medium shout-out-text your-project">Want your project here?</div>
+        </li>
+        <li class="w-hidden-main task-container"><a class="task-project-link" href="https://github.com/wagjo/serialization-formats">wagjo/serialization-formats</a>
           <div class="w-container source-show-line-w">
             <div class="source-show-line"></div>
           </div>
           <p class="task-para">Comparison table of Clojure-minded&nbsp;<strong>data serialization</strong> formats EDN, CLJ and JSON wants <strong>EBNF</strong> added to the mix.</p>
-          <a class="w-inline-block task-issue-link-wrapper" href="https://github.com/wagjo/serialization-formats/issues/1">
+          <a class="w-hidden-small w-hidden-tiny w-inline-block task-issue-link-wrapper" href="https://github.com/wagjo/serialization-formats/issues/1">
+            <div class="w-row">
+              <div class="w-col w-col-1 w-col-small-1 w-col-tiny-1">
+                <div class="task-checkbox-todo"></div>
+              </div>
+              <div class="w-col w-col-11 w-col-small-11 w-col-tiny-11">
+                <div class="w-hidden-small w-hidden-tiny task-issue-link">Add EBNF syntax to comparison table&nbsp;(#1)</div>
+              </div>
+            </div>
+          </a>
+          <a class="w-hidden-main w-hidden-medium w-hidden-small w-hidden-tiny w-inline-block task-issue-link-wrapper" href="https://github.com/wagjo/serialization-formats/issues/1">
             <div class="w-row">
               <div class="w-col w-col-1 w-col-small-1 w-col-tiny-1">
                 <div class="task-checkbox-todo"></div>
@@ -190,182 +206,133 @@
             </div>
           </a>
         </li>
-        <li class="task-container shout-out-box">
-          <div class="shout-out-text your-project">Want your project here?</div>
-        </li>
         </ul>
       </div>
       <div class="w-col w-col-8 feed-column">
-        <ul class="w-list-unstyled featured-section">
-          <li class="task-container task-container-featured">
-            <p class="quoted-para">“Baker, Cooper, Fletcher, Miller, and Smith live on the first five floors of this apartment house. Baker does not live on the fifth floor. Cooper does not live on the first floor. Fletcher does not live on either the fifth or the first floor.
-              Miller lives on a higher floor than does Cooper. Smith does not live on a floor adjacent to Fletcher's. Fletcher does not live on a floor adjacent to Cooper's.”</p>
-            <div class="feature-quote">—The Art of the Propagator</div><a class="task-project-link" href="https://github.com/tgk/propaganda">tgk/propaganda</a>
-            <div class="w-container source-show-line-w">
+        <ul class="w-list-unstyled featured-section feature">
+          <li class="w-hidden-small w-hidden-tiny task-container task-container-intro"><a class="task-project-link brace brace-left" href="#"><strong>#{</strong></a><a class="task-project-link date" href="#">1</a><a class="task-project-link brace brace-right" href="#"><strong>}</strong></a><a class="task-project-link date" href="#">October 6th, 2014</a>
+            <div
+            class="w-container source-show-line-w">
               <div class="source-show-line"></div>
-            </div>
-            <p>How would you go about solving a problem where you might have to make assumptions, explore options, and possibly back-track frequently to try the alternative?&nbsp;One answer is <strong>implicit-search</strong>, explored in the Scheme language
-              by Sussman and Radul in their MIT paper <em>The Art of the Propagator</em>, which describes a <strong>declarative, constraint-based </strong>programming paradigm.</p>
-            <p class="task-para">Thomas Kristensen’s <strong>propaganda</strong> is a clj and cljs library implementing the propagator model. It still lacks, however, the ability to hold&nbsp;<strong>alternate worldviews</strong> as proposed in Subsection 6.2 of the original
-              paper, which is what would allow us to easily solve things like the apartment floors problem above .</p>
-            <a class="w-hidden-main w-hidden-medium w-inline-block task-issue-link-wrapper" href="https://github.com/tgk/propaganda/issues/4">
-              <div class="w-row">
-                <div class="w-col w-col-1 w-col-small-1 w-col-tiny-1">
-                  <div class="task-checkbox-todo"></div>
-                </div>
-                <div class="w-col w-col-11 w-col-small-11 w-col-tiny-11">
-                  <div class="task-issue-link">Dependencies for Alternate Worldviews <strong>(#4)</strong>
-                  </div>
-                </div>
-              </div>
-            </a>
-            <a class="w-hidden-small w-hidden-tiny w-inline-block task-issue-link-wrapper" href="https://github.com/tgk/propaganda/issues/4">
-              <div class="w-row">
-                <div class="w-col w-col-1 w-col-small-1 w-col-tiny-1">
-                  <div class="task-checkbox-todo"></div>
-                </div>
-                <div class="w-col w-col-11 w-col-small-11 w-col-tiny-11">
-                  <div class="task-issue-link task-issue-link-featured">Dependencies for Alternate Worldviews <strong>(#4)</strong>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </li>
-          <li class="task-container task-container-featured">
-            <h1 class="close-subtitle-heading">physical calculations</h1>
-            <div class="feature-quote">(text by&nbsp;Alan Eliasen from futureboy.us/frinkdocs)&nbsp;</div>
-            <p class="code-comment code-comment-first">;; In the movie Independence Day, the alien mother ship is
-              <br>;; said to be 500 km in diameter and have a mass 1/4 that of
-              <br>;; earth's moon. If the mother ship were a sphere, what would
-              <br>;; its density be? (The volume of a sphere is 4/3 pi radius3)</p>
-            <p class="code-snippet">(<strong>-&gt;</strong> (<strong>fj_</strong> (<strong>fj</strong> 1/4 :moonmass)
-              <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<strong>fj</strong> 4/3 :pi)
-              <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<strong>fj**</strong> (<strong>fj</strong> 500/2 :km) 3))
-              <br>&nbsp;&nbsp;&nbsp;&nbsp;(<strong>to</strong> :water) str)</p>
-            <p class="code-comment">;; "280.68438439732194 [dimensionless]"
-              <br>
-              <br>;; This makes the ship 280 times denser than water. This is
-              <br>;; 36 times denser than iron and more than 12 times denser
-              <br>;; than any known element! As the ship is actually more a
-              <br>;; thin disc than a sphere, it would actually be even denser.
-              <br>;; Since it contains lots of empty space, parts of it would
-              <br>;; have to be much, much denser.
-              <br>
-              <br>;; If the object is this dense and has such a large mass,
-              <br>;; what is its surface gravity? Surface gravity is given
-              <br>;; by G mass / radius2, where G is the gravitational constant:</p>
-            <p class="code-snippet">(<strong>-&gt;</strong> (<strong>fj_</strong> (<strong>fj</strong> :G 1/4 :moonmass)
-              <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<strong>fj**</strong> (<strong>fj</strong> 500/2 :km) 2))
-              <br>&nbsp;&nbsp;&nbsp;&nbsp;(<strong>to</strong> :gravity) str)</p>
-            <p class="code-comment code-comment-last">;; "2.000331549387406 [dimensionless]"
-              <br>
-              <br>;; The surface gravity of the spaceship is thus at least twice
-              <br>;; earth's gravity-- and that's on the rim where gravity is
-              <br>;; weakest. It would actually be much higher since it's much,
-              <br>;; much flatter than a sphere. I hope you're not the alien that
-              <br>;; has to go outside and paint it.</p><a class="task-project-link" href="https://github.com/martintrojer/frinj">martintrojer/frinj</a>
-            <div class="w-container source-show-line-w">
-              <div class="source-show-line"></div>
-            </div>
-            <p>The calculations above and many more were written by Alan Eliasen. He created <em>frink</em>, a&nbsp;&nbsp;“practical calculating tool and programming language designed to make physical calculations simple”, and the little <span class="inline-code"><strong>fj</strong></span> bits
-              above are from&nbsp;Martin Trojer's <strong>frinj</strong>, a Clojure and ClojureScript <strong>DSL</strong> inspired by frink. In the examples directory of the frinj repository you’ll find more physical diversions.&nbsp;</p>
-            <p class="task-para">Now how nice would it be to have a Wolfram Alpha-like toy of an interface on a <strong>browser</strong>, using frinj? Since it's already running in <strong>cljs</strong> (on Node.js), it should be easy enough for anyone, say, proficient or learning <strong>Om</strong> to
-              make an example web app.</p>
-            <a class="w-hidden-small w-hidden-tiny w-inline-block task-issue-link-wrapper" href="https://github.com/martintrojer/frinj/issues/4">
-              <div class="w-row">
-                <div class="w-col w-col-1 w-col-small-1 w-col-tiny-1">
-                  <div class="task-checkbox-todo"></div>
-                </div>
-                <div class="w-col w-col-11 w-col-small-11 w-col-tiny-11">
-                  <div class="task-issue-link task-issue-link-featured">Make a ClojureScript example for browsers (#4)</div>
-                </div>
-              </div>
-            </a>
-            <a class="w-hidden-main w-hidden-medium w-inline-block task-issue-link-wrapper" href="https://github.com/martintrojer/frinj/issues/4">
-              <div class="w-row">
-                <div class="w-col w-col-1 w-col-small-1 w-col-tiny-1">
-                  <div class="task-checkbox-todo"></div>
-                </div>
-                <div class="w-col w-col-11 w-col-small-11 w-col-tiny-11">
-                  <div class="task-issue-link">Make a ClojureScript example for browsers (#4)</div>
-                </div>
-              </div>
-            </a>
-          </li>
-          <li class="w-hidden-main task-container"><a class="task-project-link" href="https://github.com/wagjo/serialization-formats">wagjo/serialization-formats</a>
-            <div class="w-container source-show-line-w">
-              <div class="source-show-line"></div>
-            </div>
-            <p class="task-para">Comparison table of Clojure-minded&nbsp;<strong>data serialization</strong> formats EDN, CLJ and JSON wants <strong>EBNF</strong> added to the mix.</p>
-            <a class="w-hidden-small w-hidden-tiny w-inline-block task-issue-link-wrapper" href="https://github.com/wagjo/serialization-formats/issues/1">
-              <div class="w-row">
-                <div class="w-col w-col-1 w-col-small-1 w-col-tiny-1">
-                  <div class="task-checkbox-todo"></div>
-                </div>
-                <div class="w-col w-col-11 w-col-small-11 w-col-tiny-11">
-                  <div class="w-hidden-small w-hidden-tiny task-issue-link task-issue-link-featured">Add EBNF syntax to comparison table&nbsp;(#1)</div>
-                </div>
-              </div>
-            </a>
-            <a class="w-hidden-main w-hidden-medium w-hidden-small w-hidden-tiny w-inline-block task-issue-link-wrapper" href="https://github.com/wagjo/serialization-formats/issues/1">
-              <div class="w-row">
-                <div class="w-col w-col-1 w-col-small-1 w-col-tiny-1">
-                  <div class="task-checkbox-todo"></div>
-                </div>
-                <div class="w-col w-col-11 w-col-small-11 w-col-tiny-11">
-                  <div class="task-issue-link">Add EBNF syntax to comparison table&nbsp;(#1)</div>
-                </div>
-              </div>
-            </a>
-          </li>
-          <li class="w-hidden-medium w-hidden-small w-hidden-tiny task-container">
-            <h1>database</h1>
-            <div class="w-row">
-              <div class="w-col w-col-6">
-                <ul class="w-list-unstyled source-show-list">
-                  <li class="task-container task-container-first-nesting"><a class="task-project-link" href="https://github.com/mwmitchell/flux">mwmitchell/flux</a>
-                    <div class="w-container source-show-line-w">
-                      <div class="source-show-line"></div>
-                    </div>
-                    <p class="task-para"><strong>Solr</strong> client for Clojure could use a few <strong>examples</strong> in the README on how to do basic queries.&nbsp;</p>
-                    <a class="w-inline-block task-issue-link-wrapper" href="https://github.com/mwmitchell/flux/issues/6">
-                      <div class="w-row">
-                        <div class="w-col w-col-1 w-col-small-1 w-col-tiny-1">
-                          <div class="task-checkbox-todo"></div>
-                        </div>
-                        <div class="w-col w-col-11 w-col-small-11 w-col-tiny-11">
-                          <div class="task-issue-link task-issue-link-larger">Better examples of how to use Flux for querying/faceting&nbsp;(#6)</div>
-                        </div>
-                      </div>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div class="w-col w-col-6">
-                <ul class="w-list-unstyled source-show-list">
-                  <li class="task-container"><a class="task-project-link" href="https://github.com/edlich/clarango">edlich/clarango</a>
-                    <div class="w-container source-show-line-w">
-                      <div class="source-show-line"></div>
-                    </div>
-                    <p class="task-para"><strong>ArangoDB driver</strong>&nbsp;needs the basic <strong>CRUD</strong> operations implemented for purposes of admin/user management.</p>
-                    <a class="w-inline-block task-issue-link-wrapper" href="https://github.com/edlich/clarango/issues/7">
-                      <div class="w-row">
-                        <div class="w-col w-col-1 w-col-small-1 w-col-tiny-1">
-                          <div class="task-checkbox-todo"></div>
-                        </div>
-                        <div class="w-col w-col-11 w-col-small-11 w-col-tiny-11">
-                          <div class="task-issue-link task-issue-link-larger">Implement User Management Functions&nbsp;(#7)</div>
-                        </div>
-                      </div>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </li>
-        </ul>
       </div>
+      <p class="task-para intro-para"><em>Clojure in the Open</em> is a weekly <strong>newsletter</strong> bringing interesting and simple tasks from small to medium <strong>open source</strong> projects that anyone can contribute to.</p>
+      <div class="tasks-this-week"><span class="tasks-this-week-n">10</span> tasks are featured this first week.</div>
+      </li>
+      <li class="task-container task-container-featured">
+        <h1 class="close-subtitle-heading">physical calculations</h1>
+        <div class="feature-quote">(text by&nbsp;Alan Eliasen from futureboy.us/frinkdocs)&nbsp;</div>
+        <p class="code-comment code-comment-first">In the movie Independence Day, the alien mother ship is said to be 500 km in diameter and have a mass 1/4 that of earth's moon. If the mother ship were a sphere, what would its density be? (The volume of a sphere is 4/3 pi radius3)</p>
+        <p class="code-snippet">(<strong>-&gt;</strong> (<strong>fj_</strong> (<strong>fj</strong> 1/4 :moonmass)
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<strong>fj</strong> 4/3 :pi)
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<strong>fj**</strong> (<strong>fj</strong> 500/2 :km) 3))
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;(<strong>to</strong> :water) str)</p>
+        <p class="code-comment">;; "280.68438439732194 [dimensionless]"
+          <br>
+          <br>;; This makes the ship 280 times denser than water. This is
+          <br>;; 36 times denser than iron and more than 12 times denser
+          <br>;; than any known element! As the ship is actually more a
+          <br>;; thin disc than a sphere, it would actually be even denser.
+          <br>;; Since it contains lots of empty space, parts of it would
+          <br>;; have to be much, much denser.
+          <br>
+          <br>;; If the object is this dense and has such a large mass,
+          <br>;; what is its surface gravity? Surface gravity is given
+          <br>;; by G mass / radius2, where G is the gravitational constant:</p>
+        <p class="code-snippet">(<strong>-&gt;</strong> (<strong>fj_</strong> (<strong>fj</strong> :G 1/4 :moonmass)
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<strong>fj**</strong> (<strong>fj</strong> 500/2 :km) 2))
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;(<strong>to</strong> :gravity) str)</p>
+        <p class="code-comment code-comment-last">;; "2.000331549387406 [dimensionless]"
+          <br>
+          <br>;; The surface gravity of the spaceship is thus at least twice
+          <br>;; earth's gravity-- and that's on the rim where gravity is
+          <br>;; weakest. It would actually be much higher since it's much,
+          <br>;; much flatter than a sphere. I hope you're not the alien that
+          <br>;; has to go outside and paint it.</p><a class="task-project-link" href="https://github.com/martintrojer/frinj">martintrojer/frinj</a>
+        <div class="w-container source-show-line-w">
+          <div class="source-show-line"></div>
+        </div>
+        <p>The calculations above and many more were written by Alan Eliasen. He created <em>frink</em>, a&nbsp;&nbsp;“practical calculating tool and programming language designed to make physical calculations simple”, and the little <span class="inline-code"><strong>fj</strong></span> bits
+          above are from&nbsp;Martin Trojer's <strong>frinj</strong>, a Clojure and ClojureScript <strong>DSL</strong> inspired by frink. In the examples directory of the frinj repository you’ll find more physical diversions.&nbsp;</p>
+        <p class="task-para">Now how nice would it be to have a Wolfram Alpha-like toy of an interface on a <strong>browser</strong>, using frinj? Since it's already running in <strong>cljs</strong> (on Node.js), it should be easy enough for anyone, say, proficient or learning <strong>Om</strong> to
+          make an example web app.</p>
+        <a class="w-hidden-small w-hidden-tiny w-inline-block task-issue-link-wrapper" href="https://github.com/martintrojer/frinj/issues/4">
+          <div class="w-row">
+            <div class="w-col w-col-1 w-col-small-1 w-col-tiny-1">
+              <div class="task-checkbox-todo"></div>
+            </div>
+            <div class="w-col w-col-11 w-col-small-11 w-col-tiny-11">
+              <div class="task-issue-link task-issue-link-featured">Make a ClojureScript example for browsers (#4)</div>
+            </div>
+          </div>
+        </a>
+        <a class="w-hidden-main w-hidden-medium w-inline-block task-issue-link-wrapper" href="https://github.com/martintrojer/frinj/issues/4">
+          <div class="w-row">
+            <div class="w-col w-col-1 w-col-small-1 w-col-tiny-1">
+              <div class="task-checkbox-todo"></div>
+            </div>
+            <div class="w-col w-col-11 w-col-small-11 w-col-tiny-11">
+              <div class="task-issue-link">Make a ClojureScript example for browsers (#4)</div>
+            </div>
+          </div>
+        </a>
+      </li>
+      <li class="task-container task-container-featured">
+        <h1>apartment floors</h1>
+        <p class="quoted-para">“Baker, Cooper, Fletcher, Miller, and Smith live on the first five floors of this apartment house. Baker does not live on the fifth floor. Cooper does not live on the first floor. Fletcher does not live on either the fifth or the first floor.
+          Miller lives on a higher floor than does Cooper. Smith does not live on a floor adjacent to Fletcher's. Fletcher does not live on a floor adjacent to Cooper's.”</p>
+        <div class="feature-quote">—The Art of the Propagator</div><a class="task-project-link" href="https://github.com/tgk/propaganda">tgk/propaganda</a>
+        <div class="w-container source-show-line-w">
+          <div class="source-show-line"></div>
+        </div>
+        <p>How would you go about solving a problem where you might have to make assumptions, explore options, and possibly back-track frequently to try the alternative?&nbsp;One answer is <strong>implicit-search</strong>, explored in the Scheme language
+          by Sussman and Radul in their MIT paper <em>The Art of the Propagator</em>, which describes a <strong>declarative, constraint-based </strong>programming paradigm.</p>
+        <p class="task-para">Thomas Kristensen’s <strong>propaganda</strong> is a clj and cljs library implementing the propagator model. It still lacks, however, the ability to hold&nbsp;<strong>alternate worldviews</strong> as proposed in Subsection 6.2 of the original paper,
+          which is what would allow us to easily solve things like the apartment floors problem above .</p>
+        <a class="w-hidden-main w-hidden-medium w-inline-block task-issue-link-wrapper" href="https://github.com/tgk/propaganda/issues/4">
+          <div class="w-row">
+            <div class="w-col w-col-1 w-col-small-1 w-col-tiny-1">
+              <div class="task-checkbox-todo"></div>
+            </div>
+            <div class="w-col w-col-11 w-col-small-11 w-col-tiny-11">
+              <div class="task-issue-link">Dependencies for Alternate Worldviews <strong>(#4)</strong>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a class="w-hidden-small w-hidden-tiny w-inline-block task-issue-link-wrapper" href="https://github.com/tgk/propaganda/issues/4">
+          <div class="w-row">
+            <div class="w-col w-col-1 w-col-small-1 w-col-tiny-1">
+              <div class="task-checkbox-todo"></div>
+            </div>
+            <div class="w-col w-col-11 w-col-small-11 w-col-tiny-11">
+              <div class="task-issue-link task-issue-link-featured">Dependencies for Alternate Worldviews <strong>(#4)</strong>
+              </div>
+            </div>
+          </div>
+        </a>
+      </li>
+      <li class="w-hidden-main w-hidden-medium task-container shout-out-box">
+        <div class="shout-out-text your-project">Want your project here?</div>
+      </li>
+      <li class="w-hidden-medium w-hidden-small w-hidden-tiny task-container"><a class="task-project-link" href="https://github.com/wagjo/serialization-formats">wagjo/serialization-formats</a>
+        <div class="w-container source-show-line-w">
+          <div class="source-show-line"></div>
+        </div>
+        <p class="task-para">Comparison table of Clojure-minded&nbsp;<strong>data serialization</strong> formats EDN, CLJ and JSON wants <strong>EBNF</strong> added to the mix.</p>
+        <a class="w-inline-block task-issue-link-wrapper" href="https://github.com/wagjo/serialization-formats/issues/1">
+          <div class="w-row">
+            <div class="w-col w-col-1 w-col-small-1 w-col-tiny-1">
+              <div class="task-checkbox-todo"></div>
+            </div>
+            <div class="w-col w-col-11 w-col-small-11 w-col-tiny-11">
+              <div class="task-issue-link task-issue-link-featured">Add EBNF syntax to comparison table&nbsp;(#1)</div>
+            </div>
+          </div>
+        </a>
+      </li>
+      </ul>
     </div>
+  </div>
   </div>
   </div>
   <div class="w-slider slider" data-animation="slide" data-duration="500" data-infinite="1">
