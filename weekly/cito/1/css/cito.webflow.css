@@ -10,7 +10,7 @@ h1 {
   padding-bottom: 6px;
   padding-left: 0px;
   font-family: Roboto, sans-serif;
-  color: rgba(247, 223, 233, 0.85);
+  color: #fac8dc;
   font-size: 40px;
   line-height: 44px;
   font-weight: 400;
@@ -57,7 +57,7 @@ p {
   color: #ba8d9f;
   font-size: 16px;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
   text-align: justify;
 }
 .button {
@@ -115,7 +115,7 @@ p {
   top: 0px;
   right: 0px;
   background-color: white;
-  box-shadow: rgba(0, 0, 0, 0.10) 0px 1px 0px 0px;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 1px 0px 0px;
 }
 .nav-link {
   padding: 26px 17px;
@@ -151,7 +151,7 @@ p {
 .section.main.content {
   position: relative;
   margin-top: 0px;
-  background-color: rgba(235, 192, 209, 0.30);
+  background-color: rgba(235, 192, 209, 0.29);
   background-image: none;
   background-position: 0% 0%;
   background-size: auto;
@@ -179,7 +179,7 @@ p {
   margin-top: 30px;
   padding-top: 42px;
   padding-bottom: 42px;
-  background-color: rgba(235, 192, 209, 0.30);
+  background-color: rgba(235, 192, 209, 0.29);
   color: #e4e8eb;
 }
 .section.footer.copyright {
@@ -515,7 +515,7 @@ p {
 }
 .task-project-link.contact-info {
   padding-left: 0px;
-  color: rgba(189, 172, 179, 0.93);
+  color: rgba(245, 118, 168, 0.93);
 }
 .task-project-link.date {
   font-weight: 400;
@@ -697,9 +697,14 @@ p {
 .task-para {
   margin-top: 5px;
   margin-bottom: 7px;
+  font-family:'Open Sans', sans-serif;
   line-height: 21px;
-  font-weight: 300;
+  font-weight: 400;
   text-align: justify;
+}
+.task-para.intro-para {
+  font-size: 19px;
+  font-weight: 300;
 }
 .task-issue-link {
   position: static;
@@ -714,6 +719,7 @@ p {
 }
 .task-issue-link.task-issue-link-featured {
   margin-left: -25px;
+  color: rgba(158, 158, 158, 0.98);
 }
 .task-issue-link.task-issue-link-larger {
   margin-top: 0px;
@@ -757,7 +763,7 @@ p {
   margin-bottom: 5px;
   padding-right: 15px;
   color: rgba(245, 118, 168, 0.93);
-  font-size: 18px;
+  font-size: 19px;
   font-weight: 300;
   text-align: right;
 }
@@ -792,6 +798,7 @@ p {
 }
 .close-subtitle-heading {
   margin-bottom: 0px;
+  color: #fac8dc;
 }
 .code-comment {
   margin-top: 1px;
@@ -804,6 +811,7 @@ p {
 }
 .code-comment.code-comment-first {
   margin-top: 15px;
+  color: rgba(150, 143, 146, 0.87);
 }
 .code-comment.code-comment-last {
   margin-bottom: 10px;
@@ -911,6 +919,10 @@ p {
   .task-para {
     font-size: 16px;
   }
+  .task-para.intro-para {
+    font-size: 20px;
+    line-height: 23px;
+  }
   .task-issue-link {
     margin-left: 10px;
     font-family: Inconsolata, monospace;
@@ -1013,6 +1025,9 @@ p {
     font-size: 19px;
     line-height: 30px;
     font-weight: 300;
+  }
+  .task-para.intro-para {
+    font-size: 22px;
   }
   .task-issue-link {
     margin-top: 0px;
