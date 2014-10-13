@@ -1,13 +1,13 @@
 body {
+  background-color: #1a1015;
   font-family: Roboto, sans-serif;
-  color: #333;
   font-size: 16px;
   line-height: 22px;
 }
 h1 {
   display: block;
-  margin-bottom: -5px;
-  padding-bottom: 6px;
+  margin-bottom: 0px;
+  padding-bottom: 5px;
   padding-left: 0px;
   font-family: Roboto, sans-serif;
   color: #fac8dc;
@@ -58,7 +58,7 @@ p {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  text-align: justify;
+  text-align: left;
 }
 .button {
   display: inline-block;
@@ -98,23 +98,28 @@ p {
   padding-bottom: 10px;
 }
 .logo-text {
-  margin-top: 24px;
+  display: block;
+  margin-top: 0px;
   font-family: Bitter, serif;
-  color: #a83966;
-  font-size: 27px;
+  color: rgba(245, 118, 168, 0.93);
+  font-size: 32px;
   font-weight: 500;
 }
 .logo-text.footer {
   margin-top: 0px;
-  margin-bottom: 19px;
+  margin-bottom: 13px;
   color: rgba(245, 118, 168, 0.93);
+}
+.logo-text.footer-logo {
+  color: rgba(209, 59, 119, 0.92);
+  font-size: 32px;
 }
 .navigation {
   position: static;
   left: 0px;
   top: 0px;
   right: 0px;
-  background-color: white;
+  background-color: #333;
   box-shadow: rgba(0, 0, 0, 0.09) 0px 1px 0px 0px;
 }
 .nav-link {
@@ -135,9 +140,7 @@ p {
 .section {
   padding-top: 70px;
   padding-bottom: 70px;
-}
-.section.blue {
-  background-color: #e3f3fc;
+  background-color: rgba(235, 192, 209, 0.30);
 }
 .section.main {
   margin-top: 73px;
@@ -166,28 +169,12 @@ p {
   background-repeat: repeat;
   background-attachment: scroll;
 }
-.section.grey {
-  background-color: #f0f0f0;
-}
-.section.image {
-  background-image: url('../images/town.jpg');
-  background-position: 50% 50%;
-  background-size: cover;
-  color: white;
-}
 .section.footer {
   margin-top: 30px;
   padding-top: 42px;
   padding-bottom: 42px;
-  background-color: rgba(235, 192, 209, 0.29);
+  background-color: rgba(235, 192, 209, 0.30);
   color: #e4e8eb;
-}
-.section.footer.copyright {
-  padding-top: 19px;
-  padding-bottom: 19px;
-  background-color: #1c1d1f;
-  color: #939596;
-  font-size: 14px;
 }
 .section.purple {
   padding-top: 20px;
@@ -230,13 +217,9 @@ p {
 }
 .footer-slogan {
   margin-bottom: 11px;
+  font-family:'Open Sans', sans-serif;
   color: #939596;
-}
-.footer-slogan.mail-contact-text {
-  display: inline;
-  margin-left: 8px;
-  padding-top: 8px;
-  color: #f0f5f7;
+  font-weight: 600;
 }
 .social-icon {
   margin-right: 11px;
@@ -273,13 +256,6 @@ p {
   border-bottom-color: transparent;
   color: #d2d7d9;
 }
-.page-link.white {
-  border-bottom-color: rgba(255, 255, 255, 0.49);
-  color: white;
-}
-.page-link.white:hover {
-  border-bottom-color: white;
-}
 .newsletter-field {
   width: 60%;
   height: 40px;
@@ -288,7 +264,9 @@ p {
   border-top-left-radius: 2px;
   border-bottom-left-radius: 2px;
   background-color: rgba(245, 118, 168, 0.18);
+  font-family:'Open Sans', sans-serif;
   color: rgba(245, 118, 168, 0.93);
+  font-weight: 600;
 }
 .newsletter-field:focus {
   border-width: 1px;
@@ -307,6 +285,7 @@ p {
   -webkit-transition: all 500ms ease;
   -o-transition: all 500ms ease;
   transition: all 500ms ease;
+  font-family:'Roboto Slab', sans-serif;
   color: #d5d8db;
 }
 .newsletter-button:hover {
@@ -377,9 +356,6 @@ p {
 .feature {
   text-align: left;
 }
-.feature.centered {
-  text-align: center;
-}
 .feature-row {
   margin-bottom: 14px;
 }
@@ -431,9 +407,6 @@ p {
 .main-feature-group {
   margin-top: 30px;
 }
-.center-contents {
-  text-align: center;
-}
 .small-features-row {
   margin-top: 71px;
 }
@@ -452,21 +425,10 @@ p {
   font-weight: 300;
   text-align: center;
 }
-.psychedelic {
-  position: absolute;
-  left: 0px;
-  right: 0px;
-  bottom: 0px;
-  float: none;
-  clear: none;
-  background-image: url('../images/psychedelic-flowers-web.png');
-  background-position: 0px 100%;
-  background-repeat: repeat;
-}
 .show-label {
-  margin-top: -5px;
-  padding-top: 6px;
-  padding-bottom: 10px;
+  margin-top: 0px;
+  padding-top: 10px;
+  padding-bottom: 0px;
   font-family:'Roboto Slab', sans-serif;
   color: rgba(245, 118, 168, 0.93);
   font-size: 23px;
@@ -483,7 +445,7 @@ p {
 .task-container.contact-item-outer {
   z-index: 1;
   margin-top: 0px;
-  padding: 6px 0px;
+  padding: 5px 0px 6px;
   color: rgba(186, 141, 159, 0.45);
 }
 .task-container.task-container-featured {
@@ -508,6 +470,7 @@ p {
 .task-container.task-container-intro {
   margin-top: 0px;
   padding-top: 10px;
+  padding-bottom: 0px;
 }
 .task-container.task-container-pre-subhead {
   margin-top: 0px;
@@ -522,8 +485,10 @@ p {
 }
 .task-project-link.contact-info {
   display: inline;
+  margin-top: 0px;
   padding-left: 0px;
   color: rgba(245, 118, 168, 0.93);
+  font-size: 18px;
 }
 .task-project-link.date {
   display: inline;
@@ -558,11 +523,6 @@ p {
   padding-right: 4px;
   padding-left: 4px;
 }
-.source-show-check-w {
-  position: absolute;
-  display: inline;
-  float: none;
-}
 .source-show-check {
   position: absolute;
   top: 0px;
@@ -573,9 +533,6 @@ p {
   height: 8px;
   float: none;
   background-color: #ba8d9f;
-}
-.source-show-check-l {
-  display: inline;
 }
 .source-show-count {
   display: inline-block;
@@ -602,9 +559,6 @@ p {
 .task-checkbox-todo.cito-issue-link {
   border-width: 8px;
   border-color: rgba(189, 172, 179, 0.18);
-}
-.task-checkbox-todo.task-check-box-column-1 {
-  margin-right: 0px;
 }
 .feed-item {
   padding-left: 8px;
@@ -707,16 +661,21 @@ p {
 }
 .task-para {
   margin-top: 5px;
-  margin-bottom: 7px;
+  margin-bottom: 1px;
   font-family:'Open Sans', sans-serif;
+  font-size: 18px;
   line-height: 21px;
   font-weight: 400;
-  text-align: justify;
+  text-align: left;
 }
 .task-para.intro-para {
   font-size: 24px;
-  line-height: 30px;
+  line-height: 28px;
   font-weight: 300;
+  text-align: left;
+}
+.task-para.para-before-para {
+  margin-bottom: 10px;
 }
 .task-issue-link {
   position: static;
@@ -732,6 +691,7 @@ p {
 .task-issue-link.task-issue-link-featured {
   margin-left: -25px;
   color: rgba(158, 158, 158, 0.98);
+  font-weight: 800;
 }
 .task-issue-link.task-issue-link-larger {
   margin-top: 0px;
@@ -739,6 +699,9 @@ p {
 }
 .task-issue-link.task-issue-link-far {
   margin-left: 4px;
+}
+.task-issue-link.task-done {
+  text-decoration: line-through;
 }
 .task-container {
   position: static;
@@ -750,19 +713,16 @@ p {
   float: none;
   clear: none;
 }
-.tasx-container-clear {
-  display: inline-block;
-  clear: both;
-}
 .tasks-this-week {
-  margin-top: 0px;
+  margin-top: 5px;
   margin-bottom: 15px;
-  padding-top: 15px;
+  padding: 5px 10px 15px 0px;
+  border-radius: 0px;
   font-family: Inconsolata, monospace;
-  color: rgba(245, 118, 168, 0.93);
-  font-size: 24px;
+  color: #ba8d9f;
+  font-size: 20px;
   line-height: 18px;
-  font-weight: 400;
+  font-weight: 700;
 }
 .task-project-link {
   display: inline-block;
@@ -776,15 +736,23 @@ p {
 .feature-quote {
   margin-bottom: 5px;
   padding-right: 25px;
-  color: rgba(245, 118, 168, 0.93);
+  color: #ba8d9f;
   font-size: 19px;
-  font-weight: 300;
+  font-weight: 400;
   text-align: right;
 }
+.classifieds-header {
+  float: none;
+  text-align: left;
+}
 .quoted-para {
-  margin-top: 5px;
-  margin-bottom: 1px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 10px;
+  padding-bottom: 0px;
+  font-size: 18px;
   font-style: italic;
+  font-weight: 400;
 }
 .task-number {
   color: rgba(245, 118, 168, 0.93);
@@ -808,10 +776,8 @@ p {
   text-align: center;
 }
 .shout-out-text.your-project {
-  margin-top: 5px;
-  margin-bottom: 0px;
-  padding-top: 13px;
-  padding-bottom: 17px;
+  margin: 55px 40px 0px;
+  padding: 17px 10px 22px;
 }
 .close-subtitle-heading {
   margin-bottom: 0px;
@@ -821,36 +787,41 @@ p {
 .code-comment {
   margin-top: 1px;
   margin-bottom: 1px;
-  font-family: Inconsolata, monospace;
-  color: rgba(189, 172, 179, 0.93);
+  padding-left: 0px;
+  font-family:'Open Sans', sans-serif;
+  color: #ba8d9f;
   font-size: 18px;
+  line-height: 20px;
   font-weight: 400;
   text-align: left;
 }
 .code-comment.code-comment-first {
   margin-top: 15px;
-  color: rgba(150, 143, 146, 0.87);
+  padding-left: 0px;
+  font-family:'Open Sans', sans-serif;
+  color: #ba8d9f;
+  line-height: 21px;
+  font-weight: 400;
 }
 .code-comment.code-comment-last {
   margin-bottom: 10px;
+  line-height: 21px;
 }
 .task-issue-link-wrapper {
   display: inline-block;
   width: 100%;
+  margin-top: 6px;
 }
 .code-snippet {
-  margin-top: 1px;
-  margin-bottom: 1px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 8px 10px;
+  border-radius: 5px;
+  background-color: rgba(191, 159, 172, 0.30);
   font-family: Inconsolata, monospace;
 }
 .inline-code {
   font-family: Inconsolata, monospace;
-}
-.mail-wrapper {
-  display: inline-block;
-}
-.main-content {
-  padding-top: 30px;
 }
 .contact-info {
   margin-left: 0px;
@@ -862,19 +833,58 @@ p {
 }
 .contact-info.about-me {
   margin-right: 20px;
+  font-weight: 400;
+  text-align: left;
+}
+.contact-info.copyright {
+  margin-top: 15px;
+  padding-left: 0px;
+  text-align: left;
 }
 .contact-block {
   position: relative;
-  margin-top: 4px;
-}
-.contact-info-column {
-  padding-left: 0px;
-}
-.cljs-subhead {
-  padding-bottom: 7px;
+  margin-top: 10px;
 }
 .tasks-this-week-n {
-  font-size: 32px;
+  font-size: 28px;
+}
+.weekly-subtitle {
+  display: inline-block;
+  margin-top: 3px;
+  margin-right: 64px;
+  float: right;
+  font-family:'Roboto Slab', sans-serif;
+  color: #fac8dc;
+  font-size: 23px;
+  font-weight: 300;
+}
+.weekly-subtitle.footer-logo {
+  margin-top: 7px;
+  color: rgba(245, 118, 168, 0.93);
+}
+.title-wrapper {
+  display: inline-block;
+  margin-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 0px;
+}
+.cito-main {
+  max-width: 940px;
+  margin-right: 17px;
+  margin-left: 17px;
+  padding-top: 30px;
+}
+.cito-navbar {
+  background-color: transparent;
+}
+.cito-header {
+  margin-bottom: 0px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: rgba(235, 192, 209, 0.32);
+}
+.text-link {
+  color: #fac8dc;
 }
 @media (max-width: 991px) {
   .button.in-pricing {
@@ -882,7 +892,7 @@ p {
     line-height: 18px;
   }
   .logo-text {
-    font-size: 22px;
+    font-size: 30px;
   }
   .navigation {
     position: static;
@@ -920,15 +930,12 @@ p {
   .main-feature-group {
     margin-top: 0px;
   }
-  .main-image {
-    margin-top: 49px;
-  }
   .task-project-link {
     overflow-x: auto;
     overflow-y: auto;
   }
   .task-project-link.contact-info {
-    font-size: 14px;
+    font-size: 18px;
     line-height: 0px;
   }
   .task-checkbox-todo {
@@ -945,13 +952,13 @@ p {
   }
   .task-para.intro-para {
     font-size: 23px;
-    line-height: 29px;
+    line-height: 27px;
   }
   .task-issue-link {
     margin-left: 10px;
     font-family: Inconsolata, monospace;
     color: rgba(189, 172, 179, 0.93);
-    font-size: 14px;
+    font-size: 16px;
     line-height: 19px;
     font-weight: 400;
   }
@@ -967,14 +974,34 @@ p {
   .task-project-link {
     margin-bottom: -5px;
   }
+  .classifieds-header {
+    line-height: 23px;
+  }
   .quoted-para {
-    margin-top: 15px;
+    margin-top: 10px;
+    padding-top: 0px;
   }
   .shout-out-text {
     margin-top: 0px;
     margin-bottom: 0px;
     padding-right: 3px;
     padding-left: 3px;
+  }
+  .shout-out-text.your-project {
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+  .contact-info.copyright {
+    margin-top: 53px;
+  }
+  .title-wrapper {
+    margin-top: 0px;
+    padding-top: 10px;
+    padding-left: 15px;
+  }
+  .cito-main {
+    margin-right: 7px;
+    margin-left: 7px;
   }
 }
 @media (max-width: 767px) {
@@ -989,6 +1016,15 @@ p {
     margin-top: 15px;
     margin-bottom: 4px;
     font-size: 31px;
+  }
+  .logo-text.footer {
+    margin-top: 25px;
+    margin-bottom: 0px;
+    text-align: left;
+  }
+  .logo-text.footer-logo {
+    margin-top: 8px;
+    margin-bottom: 0px;
   }
   .nav-link.menu {
     padding-top: 11px;
@@ -1042,12 +1078,20 @@ p {
     margin-top: 31px;
     margin-bottom: 0px;
   }
+  .task-container.contact-item-outer {
+    text-align: left;
+  }
   .task-project-link {
     display: inline;
     overflow-x: auto;
     overflow-y: auto;
     font-size: 22px;
     font-weight: 600;
+    text-align: center;
+  }
+  .task-project-link.contact-info {
+    font-size: 21px;
+    font-weight: 400;
     text-align: center;
   }
   .task-project-link.date {
@@ -1060,14 +1104,22 @@ p {
     margin-top: 0px;
     margin-left: 0px;
   }
+  .show-column {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
   .task-para {
     font-size: 19px;
-    line-height: 30px;
+    line-height: 22px;
     font-weight: 400;
   }
   .task-para.intro-para {
     font-size: 26px;
-    line-height: 32px;
+    line-height: 29px;
+  }
+  .task-para.para-before-para {
+    margin-bottom: 15px;
+    line-height: 22px;
   }
   .task-issue-link {
     margin-top: 0px;
@@ -1101,6 +1153,7 @@ p {
   }
   .quoted-para {
     margin-top: 20px;
+    line-height: 22px;
   }
   .task-number {
     font-size: 30px;
@@ -1112,8 +1165,35 @@ p {
     padding-right: 5px;
     padding-left: 5px;
   }
+  .task-issue-link-wrapper {
+    margin-top: 12px;
+  }
+  .contact-info.copyright {
+    margin-top: 30px;
+    text-align: center;
+  }
+  .weekly-subtitle {
+    margin-top: 2px;
+  }
+  .title-wrapper {
+    padding-left: 20px;
+  }
+  .title-wrapper.footer-title-wrapper {
+    margin-top: 30px;
+  }
 }
 @media (max-width: 479px) {
+  .logo-text {
+    margin-top: 10px;
+    font-size: 28px;
+  }
+  .logo-text.footer {
+    margin-bottom: 0px;
+    text-align: left;
+  }
+  .logo-text.footer-logo {
+    margin-bottom: 0px;
+  }
   .newsletter-field {
     display: block;
     margin-right: auto;
@@ -1135,6 +1215,7 @@ p {
     padding-top: 3px;
     padding-bottom: 3px;
     font-size: 17px;
+    font-weight: 400;
   }
   .task-project-link.task-project-link-smaller {
     font-size: 19px;
@@ -1142,17 +1223,32 @@ p {
   .task-checkbox-todo {
     float: none;
   }
+  .show-column {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
   .task-para {
     font-size: 18px;
-    line-height: 25px;
+    line-height: 22px;
+    text-align: left;
+  }
+  .task-para.intro-para {
+    font-size: 22px;
+    line-height: 23px;
+    text-align: left;
+  }
+  .task-para.para-before-para {
+    margin-bottom: 12px;
+    line-height: 22px;
   }
   .task-issue-link {
     margin-top: 0px;
     margin-left: 8px;
+    line-height: 20px;
   }
   .tasks-this-week {
     font-size: 23px;
-    line-height: 24px;
+    line-height: 23px;
   }
   .feature-quote {
     margin-bottom: 20px;
@@ -1160,6 +1256,7 @@ p {
   .quoted-para {
     margin-top: 15px;
     font-size: 18px;
+    line-height: 22px;
   }
   .task-number {
     font-size: 31px;
@@ -1167,6 +1264,32 @@ p {
   .shout-out-text {
     padding-right: 5px;
     padding-left: 5px;
+  }
+  .close-subtitle-heading {
+    line-height: 42px;
+  }
+  .code-comment {
+    line-height: 22px;
+  }
+  .code-comment.code-comment-last {
+    line-height: 22px;
+  }
+  .task-issue-link-wrapper {
+    margin-top: 12px;
+  }
+  .code-snippet {
+    font-size: 14px;
+  }
+  .weekly-subtitle {
+    margin-top: 0px;
+  }
+  .title-wrapper.footer-title-wrapper {
+    margin-top: 30px;
+  }
+  .cito-main {
+    margin-right: 3px;
+    margin-left: 3px;
+    padding-top: 10px;
   }
 }
 
