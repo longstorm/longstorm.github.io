@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<!-- This site was created in Webflow. http://www.webflow.com-->
+<!-- Last Published: Wed Oct 15 2014 00:55:33 GMT+0000 (UTC) -->
+<html data-wf-site="542f1b15fcacab585b73924a" data-wf-page="543293d450bc361265fc37d3">
+<head>
+  <meta charset="utf-8">
+  <title>Clojure in the Open #1 - Simple tasks from open source projects</title>
+  <meta name="description" content="Clojure in the Open is a weekly newsletter designed to feature simple tasks from small to medium open source projects.">
+  <meta name="keywords" content="clj cljs clojure open source collaboration contribution contributing project projects simple task tasks ">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="generator" content="Webflow">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/webflow.css">
+  <link rel="stylesheet" type="text/css" href="css/cito.webflow.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+  <script>
+    WebFont.load({
+      google: {
+        families: ["Open Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic","Bitter:400,700,400italic","PT Sans:400,400italic,700,700italic","Inconsolata:400,400italic,700,700italic","Roboto:300,regular,500","Roboto Condensed:300,regular,700","Roboto Slab:300,regular,700","Arbutus Slab:regular"]
+      }
+    });
+  </script>
+  <script type="text/javascript" src="js/modernizr.js"></script>
+  <link rel="shortcut icon" type="image/x-icon" href="images/New icon.ico">
+  <link rel="apple-touch-icon" href="images/metric-webclip.png">
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-55436064-1'], ['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script');
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+</head>
+<body>
+  <div class="cito-header">
+    <div class="w-nav cito-navbar" data-collapse="medium" data-animation="default" data-duration="400" data-contain="1">
+      <div class="w-container">
+        <a class="w-nav-brand" href="#">
+          <div class="w-clearfix title-wrapper">
+            <div class="logo-text">Clojure in the Open</div>
+            <div class="weekly-subtitle">weekly</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="cito-main">
+    <div class="w-row">
+      <div class="w-col w-col-8 show-column">
+        <div class="main-intro"><a class="task-project-link brace brace-left" href="#"><strong>#{</strong></a><a class="task-project-link date" href="#">2</a><a class="task-project-link brace brace-right" href="#"><strong>}</strong></a><a class="task-project-link date" href="#">October 14th, 2014</a>
+          <div
+          class="w-container source-show-line-w">
+            <div class="source-show-line"></div>
+        </div>
+        <p class="task-para intro-para"><em>Clojure in the Open</em> is a weekly newsletter bringing interesting and simple tasks from small to medium <strong>open source</strong> projects that anyone can contribute to.</p>
+        <div class="tasks-this-week"><span class="tasks-this-week-n">9</span> tasks are featured this week.</div>
+      </div>
+      <div class="main-segment">
+        <h1 class="close-subtitle-heading">a unit of work</h1>
+        <p class="task-para para-before-project"><a class="text-link" href="http://en.wikipedia.org/wiki/Double-entry_bookkeeping_system">Double-entry bookkeeping</a>&nbsp;is a system for achieving balanced transaction records, by which every entry to an account requires a corresponding and
+          opposite entry to a different account.&nbsp;</p><a class="task-project-link" href="https://github.com/twashing/bkell">twashing/bkell</a>
+        <div class="w-container source-show-line-w">
+          <div class="source-show-line"></div>
+        </div>
+        <p class="task-para">
+          <a class="text-link" href="http://en.wikipedia.org/wiki/Double-entry_bookkeeping_system"></a>Bkell is an open source Clojure project providing a shell and API for maintaining these balanced transaction records. It stores them using Datomic, and <strong>currently lacks functionality to import a dataset</strong> into it.</p>
+        <p class="task-para"><strong>Your job is to write bkell’s import function. The specs:</strong>
+          <a class="text-link" href="http://en.wikipedia.org/wiki/Double-entry_bookkeeping_system"></a>
+        </p>
+        <ul>
+          <li class="spec-item">qualified name: <strong>bkell.bkell/import</strong>
+          </li>
+          <li class="spec-item">arguments:&nbsp;</li>
+          <ol>
+            <li class="spec-item"><strong>data</strong>:&nbsp;a simple map tree, of the data that a user intends to import to their data store.</li>
+            <li class="spec-item"><strong>group</strong>:&nbsp;the group into which the data will be imported.</li>
+          </ol>
+          <li class="spec-item">expected return: <strong>nil</strong> or <em>an exception</em>
+          </li>
+        </ul>
+        <p class="task-para">
+          <a class="text-link" href="http://en.wikipedia.org/wiki/Double-entry_bookkeeping_system"></a>For further information, please consult the GitHub issue:</p>
+        <a class="w-hidden-small w-hidden-tiny w-inline-block task-issue-link-wrapper" href="https://github.com/twashing/bkell/issues/1">
+          <div class="w-row">
+            <div class="w-col w-col-1 w-col-small-1 w-col-tiny-1">
+              <div class="task-checkbox-todo"></div>
+            </div>
+            <div class="w-col w-col-11 w-col-small-11 w-col-tiny-11">
+              <div class="task-issue-link task-issue-link-featured">Implement Import Function (#1)</div>
+            </div>
+          </div>
+        </a>
+        <a class="w-hidden-main w-hidden-medium w-inline-block task-issue-link-wrapper" href="https://github.com/martintrojer/frinj/issues/4">
+          <div class="w-row">
+            <div class="w-col w-col-1 w-col-small-1 w-col-tiny-1">
+              <div class="task-checkbox-todo"></div>
+            </div>
+            <div class="w-col w-col-11 w-col-small-11 w-col-tiny-11">
+              <div class="task-issue-link">Make a ClojureScript example for browsers (#4)</div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="w-hidden-main w-hidden-medium main-segment">
+        <div class="w-container classifieds">
+          <div class="show-label"><span class="classifieds-header">open source classifieds</span>
+          </div>
+          <ul class="w-list-unstyled source-show-list left-list">
+            <li class="task-container"><a class="task-project-link" href="https://github.com/michaelklishin/neocons">michaelklishin/neocons</a>
+              <div class="w-container source-show-line-w">
+                <div class="source-show-line"></div>
+              </div>
+              <p class="task-para"><strong>Neo4j</strong> client for manipulating graph databases is in want of some intervention on its dependencies: <strong>clj-http</strong> needs updating.</p>
+              <a class="w-inline-block task-issue-link-wrapper" href="https://github.com/michaelklishin/neocons/issues/56">
+                <div class="w-row">
+                  <div class="w-col w-col-1 w-col-small-1 w-col-tiny-1">
+                    <div class="task-checkbox-todo"></div>
+                  </div>
+                  <div class="w-col w-col-11 w-col-small-11 w-col-tiny-11">
+                    <div class="task-issue-link">Update clj-http to 1.0 and make sure tests pass (#56)</div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="task-container task-section">
+              <h1>cljs</h1>
+            </li>
+            <li class="task-container"><a class="task-project-link" href="https://github.com/magomimmo/cljs-start">magomimmo/cljs-start</a>
+              <div class="w-container source-show-line-w">
+                <div class="source-show-line"></div>
+              </div>
+              <p class="task-para">The go-to lein&nbsp;<strong>template</strong>&nbsp;for ClojureScript looks to include&nbsp;<em>lein-figwheel</em> plugin for browser <strong>auto reload</strong>&nbsp;magic.</p>
+              <a class="w-inline-block task-issue-link-wrapper" href="https://github.com/magomimmo/cljs-start/issues/15">
+                <div class="w-row">
+                  <div class="w-col w-col-1 w-col-small-1 w-col-tiny-1">
+                    <div class="task-checkbox-todo"></div>
+                  </div>
+                  <div class="w-col w-col-11 w-col-small-11 w-col-tiny-11">
+                    <div class="task-issue-link">Add figwheel to the template (#15)</div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="task-container"><a class="task-project-link" href="https://github.com/magomimmo/cljs-start">magomimmo/cljs-start</a>
+              <div class="w-container source-show-line-w">
+                <div class="source-show-line"></div>
+              </div>
+              <p class="task-para">The go-to lein&nbsp;<strong>template</strong>&nbsp;for ClojureScript looks to include&nbsp;<em>lein-figwheel</em> plugin for browser <strong>auto reload</strong>&nbsp;magic.</p>
+              <a class="w-inline-block task-issue-link-wrapper" href="https://github.com/magomimmo/cljs-start/issues/15">
+                <div class="w-row">
+                  <div class="w-col w-col-1 w-col-small-1 w-col-tiny-1">
+                    <div class="task-checkbox-todo"></div>
+                  </div>
+                  <div class="w-col w-col-11 w-col-small-11 w-col-tiny-11">
+                    <div class="task-issue-link">Add figwheel to the template (#15)</div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="task-container"><a class="task-project-link" href="https://github.com/dribnet/mrhyde">dribnet/mrhyde</a>
+              <div class="w-container source-show-line-w">
+                <div class="source-show-line"></div>
+              </div>
+              <p class="task-para"><em>Mrhyde</em>, the JS interop lib powering&nbsp;<em>strokes</em>, a D3.js wrapper for cljs, wants a lift out of ClojureScript compiler obscurity.</p>
+              <a class="w-inline-block task-issue-link-wrapper" href="https://github.com/dribnet/mrhyde/issues/6">
+                <div class="w-row">
+                  <div class="w-col w-col-1 w-col-small-1 w-col-tiny-1">
+                    <div class="task-checkbox-todo"></div>
+                  </div>
+                  <div class="w-col w-col-11 w-col-small-11 w-col-tiny-11">
+                    <div class="task-issue-link">Update mrhyde to latest cljs&nbsp;(#6)</div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="task-container shout-out-box">
+              <div class="shout-out-text">cljs-noderepl, an essential project for interactive dev with ClojureScript + Node.js, <strong>needs a new maintainer.</strong>  <a class="shout-out-link" href="https://github.com/bodil/cljs-noderepl/issues/22">See it on Github.</a>
+              </div>
+            </li>
+            <li class="task-container task-section">
+              <h1>datomic</h1>
+            </li>
+            <li class="task-container"><a class="task-project-link" href="https://github.com/dmarjenburgh/memwise">dmarjenburgh/memwise</a>
+              <div class="w-container source-show-line-w">
+                <div class="source-show-line"></div>
+              </div>
+              <p class="task-para">Memory app needs to design a solid&nbsp;<strong>Datomic schema</strong> for its flashcards and decks.</p>
+              <a class="w-inline-block task-issue-link-wrapper" href="https://github.com/dmarjenburgh/memwise/issues/1">
+                <div class="w-row">
+                  <div class="w-col w-col-1 w-col-small-1 w-col-tiny-1">
+                    <div class="task-checkbox-todo"></div>
+                  </div>
+                  <div class="w-col w-col-11 w-col-small-11 w-col-tiny-11">
+                    <div class="task-issue-link">Datomic schema design (#1)</div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="task-container task-section">
+              <h1>leiningen</h1>
+            </li>
+            <li class="task-container"><a class="task-project-link" href="https://github.com/johnwalker/yakshave">johnwalker/yakshave</a>
+              <div class="w-container source-show-line-w">
+                <div class="source-show-line"></div>
+              </div>
+              <p class="task-para">A much faster implementation of <strong>lein new</strong> templating needs simple conversion to work with existing leiningen <strong>templates</strong>.</p>
+              <a class="w-inline-block task-issue-link-wrapper" href="https://github.com/johnwalker/yakshave/issues/1">
+                <div class="w-row">
+                  <div class="w-col w-col-1 w-col-small-1 w-col-tiny-1">
+                    <div class="task-checkbox-todo"></div>
+                  </div>
+                  <div class="w-col w-col-11 w-col-small-11 w-col-tiny-11">
+                    <div class="task-issue-link">Rendering yakshave.edn maps to leiningen templates (#1)</div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="task-container task-section">
+              <h1>varieties</h1>
+            </li>
+            <li class="task-container"><a class="task-project-link" href="https://github.com/lhartikk/ClojureREPL">lhartikk/ClojureREPL</a>
+              <div class="w-container source-show-line-w">
+                <div class="source-show-line"></div>
+              </div>
+              <p class="task-para"><strong>Light Table-</strong>esque instaREPL, with live inline evaluation of forms, has a simple html-related issue when rendering whitespace. &nbsp;&nbsp;&nbsp;</p>
+              <a class="w-inline-block task-issue-link-wrapper" href="https://github.com/lhartikk/ClojureREPL/issues/2">
+                <div class="w-row">
+                  <div class="w-col w-col-1 w-col-small-1 w-col-tiny-1">
+                    <div class="task-checkbox-todo"></div>
+                  </div>
+                  <div class="w-col w-col-11 w-col-small-11 w-col-tiny-11">
+                    <div class="task-issue-link">Whitespace is not rendered correctly (#2)</div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="task-container"><a class="task-project-link task-project-link-smaller" href="https://github.com/nickmcdonnough/clj-hacker-news">nickmcdonnough/clj-hacker-news</a>
+              <div class="w-container source-show-line-w">
+                <div class="source-show-line"></div>
+              </div>
+              <p class="task-para"><strong>Light Table-</strong>esque instaREPL, with live inline evaluation of forms, has a simple html-related issue rendering whitespace. &nbsp;&nbsp;&nbsp;</p>
+              <a class="w-inline-block task-issue-link-wrapper" href="https://github.com/nickmcdonnough/clj-hacker-news/issues/1">
+                <div class="w-row">
+                  <div class="w-col w-col-1 w-col-small-1 w-col-tiny-1">
+                    <div class="task-checkbox-todo"></div>
+                  </div>
+                  <div class="w-col w-col-11 w-col-small-11 w-col-tiny-11">
+                    <div class="task-issue-link">Come up with a better way to handle failed HTTP requests. (#1)</div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="task-container"><a class="task-project-link" href="https://github.com/lhartikk/ClojureREPL">lhartikk/ClojureREPL</a>
+              <div class="w-container source-show-line-w">
+                <div class="source-show-line"></div>
+              </div>
+              <p class="task-para"><strong>Light Table-</strong>esque instaREPL, with live inline evaluation of forms, has a simple html-related issue rendering whitespace. &nbsp;&nbsp;&nbsp;</p>
+              <a class="w-inline-block task-issue-link-wrapper" href="https://github.com/lhartikk/ClojureREPL/issues/2">
+                <div class="w-row">
+                  <div class="w-col w-col-1 w-col-small-1 w-col-tiny-1">
+                    <div class="task-checkbox-todo"></div>
+                  </div>
+                  <div class="w-col w-col-11 w-col-small-11 w-col-tiny-11">
+                    <div class="task-issue-link">Whitespace is not rendered correctly (#2)</div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="task-container"><a class="task-project-link" href="https://github.com/lhartikk/ClojureREPL">lhartikk/ClojureREPL</a>
+              <div class="w-container source-show-line-w">
+                <div class="source-show-line"></div>
+              </div>
+              <p class="task-para"><strong>Light Table-</strong>esque instaREPL, with live inline evaluation of forms, has a simple html-related issue rendering whitespace. &nbsp;&nbsp;&nbsp;</p>
+              <a class="w-inline-block task-issue-link-wrapper" href="https://github.com/lhartikk/ClojureREPL/issues/2">
+                <div class="w-row">
+                  <div class="w-col w-col-1 w-col-small-1 w-col-tiny-1">
+                    <div class="task-checkbox-todo"></div>
+                  </div>
+                  <div class="w-col w-col-11 w-col-small-11 w-col-tiny-11">
+                    <div class="task-issue-link">Whitespace is not rendered correctly (#2)</div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="w-hidden-main w-hidden-medium task-container task-container-featured"></li>
+          </ul>
+        </div>
+      </div>
+      <div class="main-segment">
+        <h1>Clojurist:&nbsp;Eric Normand</h1>
+        <div class="interviewee-intro-line">Eric is the editor of&nbsp;the Clojure Gazette and creator of LispCast, and this is Clojure in the Open's brief interview with him, inspired by the usesthis.com format.</div>
+        <h3>Eric, what do you do?</h3>
+        <p class="quoted-para interview-answer">I help people thrive with Clojure. That might mean the company I work for (companies are groups of people), my readers, my video viewers, people I meet, etc. Clojure has a lot of value to bring to software engineering, and I want to see it spread.
+          At the heart, there are always people. More concretely, I write the <a class="text-link" href="http://clojuregazette.com">Clojure Gazette</a>, I make <a class="text-link" href="http://purelyfunctional.tv">LispCast</a> videos and I <a class="text-link"
+          href="http://lispcast.com">blog</a>. I work at <a class="text-link" href="http://buyhappy.co">BuyHappy</a>.</p>
+        <h3>What drew you into Clojure and what made you stay?</h3>
+        <p class="quoted-para interview-answer">I've been into Lisp and functional programming for over a decade. When Clojure came out, I was skeptical at first (another Lisp?) but I soon saw how it captured a lot of the best of the older Lisps but lots of modern ideas as well. I just never
+          looked back.</p>
+        <h3>What's your workflow?&nbsp;</h3>
+        <p class="quoted-para interview-answer">I do most of my work in Emacs. I like to keep the setup relatively vanilla. Life is too short to be configuring all the time. I keep the configuration in Dropbox and symlink to it so I can have the same one on all my machines.</p>
+        <p class="quoted-para interview-answer">I use this thing called Phoenix on my Mac (work computer) so I don't have to resize windows with the mouse. It's the most minimal tiling setup. You can put two windows side-by-side with a few easy keystrokes.&nbsp;I'm also emailing a lot, and
+          though I've tried to find a better client, I keep coming back to the GMail web client. With all its faults, it just works.</p>
+        <p class="quoted-para interview-answer">For coding, I use Cider. Once you get it working, it works well. Leiningen is always there. I use Heroku a lot for work and side projects. The Clojure Gazette is published using MailChimp.</p>
+        <p class="quoted-para interview-answer">For video, I use so many things, and it's constantly evolving. I write the code that I think someone should be able to write at the end of the video. Then I break it down into its individual learning components. I call that the curriculum. They
+          need to be able to use if statements, write functions, and build maps. Then I try to find motivation for each of those things. Even a small motivation helps. Even a fictional motivation is real to the brain. Video is engaging.</p>
+        <p class="quoted-para interview-answer">Then I write the script and the slides in tandem. The script is in Emacs and I do the visuals in Keynote. Keynote doesn't have a huge variety of animations, but it forces me to keep it simple. I then record the script in Audacity. I record everything
+          in Screenflow. Then I edit in Final Cut Pro.</p>
+        <h3>What's the biggest pain point or what would be your ideal workflow?</h3>
+        <p class="quoted-para interview-answer">The computer interface is the pain point. I would love for computers to disappear. Not go away, but just become part of everything. My ideal would be smart paper, where I could write out an email longhand, draw a mail icon at the bottom, and it
+          would send it. Then I crumple it up or file it away. Paper still has advantages, so we keep coming back to it. We should just merge them together.</p>
+        <p class="quoted-para interview-answer">In terms of programming, it's similar. I really wish that programming were more like painting or sculpture. I don't paint that well, nor do I sculpt, but I can watch someone do their art and at least appreciate it. It seems so direct, and the
+          skill is apparent. I cannot share programming with my non-programmer friends because it's both foreign to them and private. It is much more like poetry. Watching a poet write is not instructive.</p>
+        <p class="quoted-para interview-answer">For editing video, my ideal workflow would mean working in the final form faster. So imagine Keynote (like PowerPoint) where you edit the slide, and what you see is what you get. But why can't that be a video, and I just say stay on this slide
+          for 3 seconds, then fade to this code being typed (and I can change the code right there). Instead, I have to do the slides first, then record the video. Once it's video, all I can do is play with time (speed it up, cut something out, etc).
+          If I need to make a change, I need to go back to Keynote and record again. Basically wysiwyg for exactly my style of video.</p>
+        <p class="quoted-para interview-answer">That said, I am still experimenting with the video style, and I'm afraid it's just too time consuming for the value. The videos are good, but I'd like to be able to do them faster. I'll probably switch to live action video recording, which has
+          its problems, but will be way more expressive for less effort.</p>
+      </div>
+      <div class="w-hidden-main w-hidden-medium main-segment">
+        <div class="shout-out-text your-project">Want your project here? &nbsp;Contact me through email below, or come join us at #cito on irc.freenode.net.</div>
+      </div>
+    </div>
+    <div class="w-col w-col-4 feed-column">
+      <div class="w-container w-hidden-small w-hidden-tiny classifieds">
+        <div class="show-label"><span class="classifieds-header">open source classifieds</span>
+        </div>
+        <ul class="w-list-unstyled source-show-list left-list">
+          <li class="task-container"><a class="task-project-link" href="https://github.com/michaelklishin/neocons">michaelklishin/neocons</a>
+            <div class="w-container source-show-line-w">
+              <div class="source-show-line"></div>
+            </div>
+            <p class="task-para"><strong>Neo4j</strong> client for manipulating graph databases is in want of some intervention on its dependencies: <strong>clj-http</strong> needs updating.</p>
+            <a class="w-inline-block task-issue-link-wrapper" href="https://github.com/michaelklishin/neocons/issues/56">
+              <div class="w-row">
+                <div class="w-col w-col-1 w-col-small-1 w-col-tiny-1">
+                  <div class="task-checkbox-todo"></div>
+                </div>
+                <div class="w-col w-col-11 w-col-small-11 w-col-tiny-11">
+                  <div class="task-issue-link">Update clj-http to 1.0 and make sure tests pass (#56)</div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="task-container task-section">
+            <h1>cljs</h1>
+          </li>
+          <li class="task-container"><a class="task-project-link" href="https://github.com/magomimmo/cljs-start">magomimmo/cljs-start</a>
+            <div class="w-container source-show-line-w">
+              <div class="source-show-line"></div>
+            </div>
+            <p class="task-para">The go-to lein&nbsp;<strong>template</strong>&nbsp;for ClojureScript looks to include&nbsp;<em>lein-figwheel</em> plugin for browser <strong>auto reload</strong>&nbsp;magic.</p>
+            <a class="w-inline-block task-issue-link-wrapper" href="https://github.com/magomimmo/cljs-start/issues/15">
+              <div class="w-row">
+                <div class="w-col w-col-1 w-col-small-1 w-col-tiny-1">
+                  <div class="task-checkbox-todo"></div>
+                </div>
+                <div class="w-col w-col-11 w-col-small-11 w-col-tiny-11">
+                  <div class="task-issue-link">Add figwheel to the template (#15)</div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="task-container"><a class="task-project-link" href="https://github.com/dribnet/mrhyde">dribnet/mrhyde</a>
+            <div class="w-container source-show-line-w">
+              <div class="source-show-line"></div>
+            </div>
+            <p class="task-para"><em>Mrhyde</em>, the JS interop lib powering&nbsp;<em>strokes</em>, a D3.js wrapper for cljs, wants a lift out of ClojureScript compiler obscurity.</p>
+            <a class="w-inline-block task-issue-link-wrapper" href="https://github.com/dribnet/mrhyde/issues/6">
+              <div class="w-row">
+                <div class="w-col w-col-1 w-col-small-1 w-col-tiny-1">
+                  <div class="task-checkbox-todo"></div>
+                </div>
+                <div class="w-col w-col-11 w-col-small-11 w-col-tiny-11">
+                  <div class="task-issue-link">Update mrhyde to latest cljs&nbsp;(#6)</div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="task-container shout-out-box">
+            <div class="shout-out-text">cljs-noderepl, an essential project for interactive dev with ClojureScript + Node.js, <strong>needs a new maintainer.</strong>  <a class="shout-out-link" href="https://github.com/bodil/cljs-noderepl/issues/22">See it on Github.</a>
+            </div>
+          </li>
+          <li class="task-container task-section">
+            <h1>datomic</h1>
+          </li>
+          <li class="task-container"><a class="task-project-link" href="https://github.com/dmarjenburgh/memwise">dmarjenburgh/memwise</a>
+            <div class="w-container source-show-line-w">
+              <div class="source-show-line"></div>
+            </div>
+            <p class="task-para">Memory app needs to design a solid&nbsp;<strong>Datomic schema</strong> for its flashcards and decks.</p>
+            <a class="w-inline-block task-issue-link-wrapper" href="https://github.com/dmarjenburgh/memwise/issues/1">
+              <div class="w-row">
+                <div class="w-col w-col-1 w-col-small-1 w-col-tiny-1">
+                  <div class="task-checkbox-todo"></div>
+                </div>
+                <div class="w-col w-col-11 w-col-small-11 w-col-tiny-11">
+                  <div class="task-issue-link">Datomic schema design (#1)</div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="task-container task-section">
+            <h1>leiningen</h1>
+          </li>
+          <li class="task-container"><a class="task-project-link" href="https://github.com/johnwalker/yakshave">johnwalker/yakshave</a>
+            <div class="w-container source-show-line-w">
+              <div class="source-show-line"></div>
+            </div>
+            <p class="task-para">A much faster implementation of <strong>lein new</strong> templating needs simple conversion to work with existing leiningen <strong>templates</strong>.</p>
+            <a class="w-inline-block task-issue-link-wrapper" href="https://github.com/johnwalker/yakshave/issues/1">
+              <div class="w-row">
+                <div class="w-col w-col-1 w-col-small-1 w-col-tiny-1">
+                  <div class="task-checkbox-todo"></div>
+                </div>
+                <div class="w-col w-col-11 w-col-small-11 w-col-tiny-11">
+                  <div class="task-issue-link">Rendering yakshave.edn maps to leiningen templates (#1)</div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="task-container task-section">
+            <h1>hot stuff</h1>
+          </li>
+          <li class="task-container"><a class="task-project-link" href="https://github.com/lhartikk/ClojureREPL">lhartikk/ClojureREPL</a>
+            <div class="w-container source-show-line-w">
+              <div class="source-show-line"></div>
+            </div>
+            <p class="task-para"><strong>Light Table-</strong>esque web instaREPL, with live inline evaluation of forms, has a simple html-related issue when rendering whitespace. &nbsp;&nbsp;&nbsp;</p>
+            <a class="w-inline-block task-issue-link-wrapper" href="https://github.com/lhartikk/ClojureREPL/issues/2">
+              <div class="w-row">
+                <div class="w-col w-col-1 w-col-small-1 w-col-tiny-1">
+                  <div class="task-checkbox-todo"></div>
+                </div>
+                <div class="w-col w-col-11 w-col-small-11 w-col-tiny-11">
+                  <div class="task-issue-link">Whitespace is not rendered correctly (#2)</div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="task-container"><a class="task-project-link task-project-link-smaller" href="https://github.com/nickmcdonnough/clj-hacker-news">nickmcdonnough/clj-hacker-news</a>
+            <div class="w-container source-show-line-w">
+              <div class="source-show-line"></div>
+            </div>
+            <p class="task-para">Cutting-edge wrapper around the newly released <strong>official HN API</strong> needs better handling of failed HTTP requests.</p>
+            <a class="w-inline-block task-issue-link-wrapper" href="https://github.com/nickmcdonnough/clj-hacker-news/issues/1">
+              <div class="w-row">
+                <div class="w-col w-col-1 w-col-small-1 w-col-tiny-1">
+                  <div class="task-checkbox-todo"></div>
+                </div>
+                <div class="w-col w-col-11 w-col-small-11 w-col-tiny-11">
+                  <div class="task-issue-link">Come up with a better way to handle failed HTTP requests. (#1)</div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="task-container"><a class="task-project-link" href="https://github.com/jeremyheiler/gel">jeremyheiler/gel</a>
+            <div class="w-container source-show-line-w">
+              <div class="source-show-line"></div>
+            </div>
+            <p class="task-para">Liquid templating engine could use a suite of awesome <a class="text-link" href="https://www.youtube.com/watch?v=zi0rHwfiX1Q">generative tests</a> using Clojure’s own test.check, inspired by Haskell's legendary QuickCheck toolkit.</p>
+            <a class="w-inline-block task-issue-link-wrapper"
+            href="https://github.com/jeremyheiler/gel/issues/1">
+              <div class="w-row">
+                <div class="w-col w-col-1 w-col-small-1 w-col-tiny-1">
+                  <div class="task-checkbox-todo"></div>
+                </div>
+                <div class="w-col w-col-11 w-col-small-11 w-col-tiny-11">
+                  <div class="task-issue-link">Create a suite of test.check tests (#1)</div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="task-container">
+            <div class="shout-out-text your-project">Want your project here? &nbsp;Contact me through email below.</div>
+          </li>
+          <li class="w-hidden-main w-hidden-medium task-container task-container-featured">
+            <div class="shout-out-text your-project">Want your project here? &nbsp;Contact me through email below, or come join us at #cito on irc.freenode.net.</div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="w-slider slider" data-animation="slide" data-duration="500" data-infinite="1">
+    <div class="w-slider-mask">
+      <div class="w-slide slide _1">
+        <div class="w-container"></div>
+      </div>
+      <div class="w-slide slide _2">
+        <div class="w-container"></div>
+      </div>
+      <div class="w-slide slide _3">
+        <div class="w-container"></div>
+      </div>
+    </div>
+    <div class="w-slider-arrow-left">
+      <div class="w-icon-slider-left"></div>
+    </div>
+    <div class="w-slider-arrow-right">
+      <div class="w-icon-slider-right"></div>
+    </div>
+    <div class="w-slider-nav w-round"></div>
+  </div>
+  <div class="section footer">
+    <div class="w-container">
+      <div class="w-row">
+        <div class="w-col w-col-6">
+          <div class="w-row">
+            <div class="w-col w-col-2">
+              <img class="person" src="images/cito-profile-pic.jpg" alt="543249280282e4a60a036059_cito-profile-pic.jpg">
+            </div>
+            <div class="w-col w-col-10">
+              <div class="contact-info about-me">Hi, thanks for reading Clojure in the Open! I'm&nbsp;Vic Goldfeld, a software contractor working with Clojure, ClojureScript and web design. Here's how to reach me regarding project submission and other inquiries:</div>
+            </div>
+          </div>
+          <div class="w-clearfix contact-block">
+            <div class="source-show-grouper">{</div>
+            <ul class="w-list-unstyled source-show-list source-show-nest">
+              <li class="task-container contact-item-outer" data-ix="new-interaction"><a class="task-project-link contact-info" href="mailto:vic@longstorm.org?subject=Clojure%20in%20the%20Open">vic@longstorm.org</a>
+              </li>
+              <li class="task-container contact-item-outer" data-ix="new-interaction"><a class="task-project-link contact-info" href="https://twitter.com/vicgoldfeld">https://twitter.com/vicgoldfeld</a>
+              </li>
+              <li class="task-container contact-item-outer" data-ix="new-interaction"><a class="task-project-link contact-info" href="https://github.com/goldfeld">https://github.com/goldfeld</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="w-col w-col-6">
+          <div class="w-clearfix title-wrapper footer-title-wrapper">
+            <div class="logo-text footer">Subscribe to</div>
+            <div class="logo-text footer-logo">Clojure in the Open</div>
+            <div class="weekly-subtitle footer-logo">weekly</div>
+          </div>
+          <div class="footer-slogan">Sign up to get next issues in your inbox</div>
+          <div class="w-form newsletter-form">
+            <form class="w-clearfix" id="wf-form-newsletter" name="wf-form-newsletter" data-name="Newsletter" action="//leakmap.us9.list-manage.com/subscribe/post?u=51575f69926036c55430eaac3&amp;amp;id=db0ae77894">
+              <input class="w-input newsletter-field" id="email" type="email" placeholder="Email Address" name="email" data-name="Email" required="required">
+              <input class="w-button newsletter-button" type="submit" value="Subscribe" data-wait="Wait..." wait="Wait...">
+            </form>
+            <div class="w-form-done success-message">
+              <p>Thank you! You’ll receive an email shortly.</p>
+            </div>
+            <div class="w-form-fail">
+              <p>Oops! Something went wrong while submitting the form :(</p>
+            </div>
+          </div>
+          <div class="contact-info">© 2014 Vic Goldfeld</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/webflow.js"></script>
+  <!--[if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
+</body>
+</html>
