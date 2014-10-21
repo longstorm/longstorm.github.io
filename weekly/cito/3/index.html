@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<!-- This site was created in Webflow. http://www.webflow.com-->
+<!-- Last Published: Wed Oct 22 2014 00:52:43 GMT+0000 (UTC) -->
+<html data-wf-site="542f1b15fcacab585b73924a" data-wf-page="543293d450bc361265fc37d3">
+<head>
+  <meta charset="utf-8">
+  <title>Clojure in the Open - Simple tasks from open source projects</title>
+  <meta name="description" content="Clojure in the Open is a weekly newsletter designed to feature simple tasks from small to medium open source projects.">
+  <meta name="keywords" content="clj cljs clojure open source collaboration contribution contributing project projects simple task tasks ">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="generator" content="Webflow">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/webflow.css">
+  <link rel="stylesheet" type="text/css" href="css/cito.webflow.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+  <script>
+    WebFont.load({
+      google: {
+        families: ["Open Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic","Bitter:400,700,400italic","PT Sans:400,400italic,700,700italic","Inconsolata:400,400italic,700,700italic","Roboto:300,regular,500","Roboto Condensed:300,regular,700","Roboto Slab:300,regular,700","Arbutus Slab:regular"]
+      }
+    });
+  </script>
+  <script type="text/javascript" src="js/modernizr.js"></script>
+  <link rel="shortcut icon" type="image/x-icon" href="images/New icon.ico">
+  <link rel="apple-touch-icon" href="images/metric-webclip.png">
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-55436064-1'], ['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script');
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+</head>
+<body>
+  <div class="cito-header">
+    <div class="w-nav cito-navbar" data-collapse="medium" data-animation="default" data-duration="400" data-contain="1">
+      <div class="w-container">
+        <a class="w-nav-brand" href="#">
+          <div class="w-clearfix title-wrapper">
+            <div class="logo-text">Clojure in the Open</div>
+            <div class="weekly-subtitle">weekly</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="cito-main">
+    <div class="w-row">
+      <div class="w-col w-col-8 show-column">
+        <div class="main-intro"><a class="task-project-link brace brace-left" href="#"><strong>#{</strong></a><a class="task-project-link date" href="#">3</a><a class="task-project-link brace brace-right" href="#"><strong>}</strong></a><a class="task-project-link date" href="#">October 21st, 2014</a>
+          <div
+          class="w-container source-show-line-w">
+            <div class="source-show-line"></div>
+        </div>
+        <p class="task-para intro-para"><em>Clojure in the Open</em> is a weekly newsletter bringing interesting and simple tasks from small to medium <strong>open source</strong> projects that anyone can contribute to.</p>
+        <div class="tasks-this-week"><span class="tasks-this-week-n">12</span> tasks are featured this week.</div>
+      </div>
+      <div class="main-segment"><a class="task-project-link" href="https://github.com/29decibel/assistant">29decibel/assistant</a>
+        <div class="w-container source-show-line-w">
+          <div class="source-show-line"></div>
+        </div>
+        <p class="task-para">Assistant, as the name implies, helps you get to what you need done faster, like a hubot or launcher program (e.g. Quicksilver, Launchy, Alfred), only this time with a rich cards interface powered by ClojureScript's Om.</p>
+        <p class="task-para task-para-append">It’s very hackable and in fact needs a more formal manner to declare its extensions, by allowing them to be fetched from GitHub repos listed in a config file, presumably through a lein plugin during the build process, instead of needing extensions
+          to be part of the Assistant repository as they are now.</p>
+        <a class="w-inline-block go-to-task" href="https://github.com/29decibel/assistant/issues/5">
+          <div class="go-to-task-text">go to task&nbsp;→</div>
+        </a>
+      </div>
+      <div class="main-segment main-segment-title">
+        <h1 class="close-subtitle-heading">gaming</h1>
+      </div>
+      <div class="main-segment"><a class="task-project-link" href="https://github.com/skatenerd/meinsweeper">skatenerd/meinsweeper</a>
+        <div class="w-container source-show-line-w">
+          <div class="source-show-line"></div>
+        </div>
+        <p class="task-para">Here's a simple enough game, both for playing and contributing. One especially fun thing about it is that it’s heavily built on <strong>core.logic</strong>, and below is just a sampler of tasks you can get involved with. If you find them too simple,
+          there are some cool <a class="text-link" href="https://github.com/skatenerd/meinsweeper/issues/2">AI open issues</a> to tackle.</p>
+        <div class="w-row">
+          <div class="w-col w-col-6">
+            <div class="task-container-half">
+              <p class="task-para">A&nbsp;mine sweeper game is a simple thing, especially visually. Concoct a GUI for it, for it has none. You can use whatever library feels best..</p>
+              <a class="w-inline-block go-to-task" href="https://github.com/skatenerd/meinsweeper/issues/7">
+                <div class="go-to-task-text">go to task&nbsp;→</div>
+              </a>
+            </div>
+          </div>
+          <div class="w-col w-col-6">
+            <div class="task-container-half">
+              <p class="task-para">..alternatively, find a more elegant and idiomatic way to implement the&nbsp;<strong>core.logic</strong>-based predicate function <em>is-sum</em>, part of the game logic.</p>
+              <a class="w-inline-block go-to-task" href="https://github.com/skatenerd/meinsweeper/issues/5">
+                <div class="go-to-task-text">go to task&nbsp;→</div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-segment"><a class="task-project-link" href="https://github.com/Skinney/coc-helper">Skinney/coc-helper</a>
+        <div class="w-container source-show-line-w">
+          <div class="source-show-line"></div>
+        </div>
+        <p class="task-para">People are doing some really unique things out in the open with Clojure web development, like this <strong>full-stack</strong> app helper and tracker for the pen &amp; paper <strong>Call of Cthulhu</strong> RPG. Below are a couple equally unique things
+          you can help out with, if either <strong>Reagent</strong> or nightmare-inducing entities are your cup of tea:&nbsp;</p>
+        <div class="w-row">
+          <div class="w-col w-col-6">
+            <div class="task-container-half">
+              <p class="task-para">Weapons for each character are currently stored as a hash-map, which unfortunately prevents use-cases such as dual-wielding a pair of a given weapon. The weapons’ data shape needs a rethink.</p>
+              <a class="w-inline-block go-to-task" href="https://github.com/Skinney/coc-helper/issues/55">
+                <div class="go-to-task-text">go to task&nbsp;→</div>
+              </a>
+            </div>
+          </div>
+          <div class="w-col w-col-6">
+            <div class="task-container-half">
+              <p class="task-para">Alert triggers for stats,&nbsp;some Lovecraftian examples being: <span class="smaller-text">lose 1/3 of HP and you're <em>unconscious</em>, lose 5 SAN at once and you’re <em>temporarily insane</em>, lose 1/3 SAN&nbsp;in a game hour and you're <em>indefinitely insane</em>. Sounds fun.</span>
+              </p>
+              <a class="w-inline-block go-to-task" href="https://github.com/Skinney/coc-helper/issues/26">
+                <div class="go-to-task-text">go to task&nbsp;→</div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-segment"><a class="task-project-link" href="https://github.com/rm-hull/big-bang">rm-hull/big-bang</a>
+        <div class="w-container source-show-line-w">
+          <div class="source-show-line"></div>
+        </div>
+        <p class="task-para">Inspired by Racket's big-bang, this eponymous library is a main-loop, world-state functional abstraction very suitable for animation, games and more generally as an actor-based system, where independent processes tick away at their tasks while
+          communicating through core.async.</p>
+        <p class="task-para task-para-append">Below you can&nbsp;see a master big-bang&nbsp;broadcasting digits every second to 6 worker big-bangs who do the job of tweening their old digit to the new one, Bezier-style:</p>
+      </div>
+      <div class="w-embed w-script code-live">
+        <canvas id="canvas-area" width="800" height="200"></canvas>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js" type="text/javascript"></script>
+        <script src="http://programming-enchiladas.destructuring-bind.org/_cljs/rm-hull/8ac4f552cd20024fa80c/generated.js?optimization-level=&debug=false" type="text/javascript"></script>
+      </div>
+      <div class="main-segment">
+        <p class="task-para"><a class="text-link" href="http://programming-enchiladas.destructuring-bind.org/rm-hull/8ac4f552cd20024fa80c">Here's the full source</a> to the&nbsp;visualization above.
+          <br>The messaging protocol is currently a simple Clojure map, and that offers some limitations and potential perils. If it’s upgraded to an actual <strong>record</strong>-based implementation, it will also make it much easier to implement, for instance,
+          rewinding and fast-forwarding time and state.</p>
+        <a class="w-inline-block go-to-task" href="https://github.com/rm-hull/big-bang/issues/6">
+          <div class="go-to-task-text">go to task&nbsp;→</div>
+        </a>
+      </div>
+    </div>
+    <div class="w-col w-col-4 feed-column">
+      <div class="w-container classifieds">
+        <div class="show-label"><span class="classifieds-header">open source classifieds</span>
+        </div>
+        <ul class="w-list-unstyled source-show-list left-list">
+          <li class="task-container"><a class="task-project-link" href="https://github.com/gadfly361/reagent-seed/">gadfly361/reagent-seed</a>
+            <div class="w-container source-show-line-w">
+              <div class="source-show-line"></div>
+            </div>
+            <p class="task-para">Starter template for React-based library <strong>reagent</strong> asks the community a question:&nbsp;should batteries-included on the frontend go as far as including a charting lib such as D3?</p>
+            <a class="w-inline-block go-to-task" href="https://github.com/gadfly361/reagent-seed/issues/1">
+              <div class="go-to-task-text">give your opinion&nbsp;→</div>
+            </a>
+          </li>
+          <li class="task-container"><a class="task-project-link" href="https://github.com/bhauman/devcards">bhauman/devcards</a>
+            <div class="w-container source-show-line-w">
+              <div class="source-show-line"></div>
+            </div>
+            <p class="task-para">The awesome ClojureScript visual aid <strong>Devcards</strong>, which allows quick creation of live data and code inspection dashboards, wants to get rid of the full Bootstrap dep, by integrating the bits it uses directly.</p>
+            <a class="w-inline-block go-to-task"
+            href="https://github.com/bhauman/devcards/issues/18">
+              <div class="go-to-task-text">go to task&nbsp;→</div>
+            </a>
+          </li>
+          <li class="task-container"><a class="task-project-link" href="https://github.com/daveyarwood/djy">daveyarwood/djy</a>
+            <div class="w-container source-show-line-w">
+              <div class="source-show-line"></div>
+            </div>
+            <p class="task-para">Character manipulation toolkit inspired by&nbsp;Haskell's Data.Char needs some parsing benchmarks conducted using <a class="text-link" href="https://github.com/hugoduncan/criterium"><strong>Criterium</strong></a>.&nbsp;</p>
+            <a class="w-inline-block go-to-task"
+            href="https://github.com/daveyarwood/djy/issues/4">
+              <div class="go-to-task-text">go to task&nbsp;→</div>
+            </a>
+          </li>
+          <li class="task-container"><a class="task-project-link" href="https://github.com/nickmcdonnough/clj-hacker-news">nickmcdonnough/clj-hacker-news</a>
+            <div class="w-container source-show-line-w">
+              <div class="source-show-line"></div>
+            </div>
+            <p class="task-para">The wrapper for <strong>Hacker News</strong>’ new official API needs to implement a&nbsp;<strong>tree</strong> data structure to represent comment hierarchy.</p>
+            <a class="w-inline-block go-to-task" href="https://github.com/nickmcdonnough/clj-hacker-news/issues/2">
+              <div class="go-to-task-text">go to task&nbsp;→</div>
+            </a>
+          </li>
+          <li class="task-container"><a class="task-project-link" href="https://github.com/peterschwarz/clj-firmata">peterschwarz/clj-firmata</a>
+            <div class="w-container source-show-line-w">
+              <div class="source-show-line"></div>
+            </div>
+            <p class="task-para">Library for communicating from computer to&nbsp;<strong>Arduino</strong>&nbsp;wants to handle interruptions to serial connection more gracefully.</p>
+            <a class="w-inline-block go-to-task" href="https://github.com/peterschwarz/clj-firmata/issues/12">
+              <div class="go-to-task-text">go to task&nbsp;→</div>
+            </a>
+          </li>
+          <li class="task-container"><a class="task-project-link" href="https://github.com/exoscale/pithos">exoscale/pithos</a>
+            <div class="w-container source-show-line-w">
+              <div class="source-show-line"></div>
+            </div>
+            <p class="task-para"><strong>Object store</strong> currently backed by Cassandra seeks to implement its keystore protocol on top of a <strong>SQL</strong> database.</p>
+            <a class="w-inline-block go-to-task" href="https://github.com/exoscale/pithos/issues/29">
+              <div class="go-to-task-text">go to task&nbsp;→</div>
+            </a>
+          </li>
+          <li class="task-container shout-out-box">
+            <div class="shout-out-text your-project">Want your project here? &nbsp;Contact me through email below.</div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="w-slider slider" data-animation="slide" data-duration="500" data-infinite="1">
+    <div class="w-slider-mask">
+      <div class="w-slide slide _1">
+        <div class="w-container"></div>
+      </div>
+      <div class="w-slide slide _2">
+        <div class="w-container"></div>
+      </div>
+      <div class="w-slide slide _3">
+        <div class="w-container"></div>
+      </div>
+    </div>
+    <div class="w-slider-arrow-left">
+      <div class="w-icon-slider-left"></div>
+    </div>
+    <div class="w-slider-arrow-right">
+      <div class="w-icon-slider-right"></div>
+    </div>
+    <div class="w-slider-nav w-round"></div>
+  </div>
+  <div class="section footer">
+    <div class="w-container">
+      <div class="w-row">
+        <div class="w-col w-col-6">
+          <div class="w-row">
+            <div class="w-col w-col-2">
+              <img class="person" src="images/cito-profile-pic.jpg" alt="543249280282e4a60a036059_cito-profile-pic.jpg">
+            </div>
+            <div class="w-col w-col-10">
+              <div class="contact-info about-me">Hi, thanks for reading Clojure in the Open! I'm&nbsp;Vic Goldfeld, a software contractor working with Clojure, ClojureScript and web design. Here's how to reach me regarding project submission and other inquiries:</div>
+            </div>
+          </div>
+          <div class="w-clearfix contact-block">
+            <div class="source-show-grouper">{</div>
+            <ul class="w-list-unstyled source-show-list source-show-nest">
+              <li class="contact-item-outer" data-ix="new-interaction"><a class="task-project-link contact-info" href="mailto:vic@longstorm.org?subject=Clojure%20in%20the%20Open">vic@longstorm.org</a>
+              </li>
+              <li class="contact-item-outer" data-ix="new-interaction"><a class="task-project-link contact-info" href="https://twitter.com/vicgoldfeld">https://twitter.com/vicgoldfeld</a>
+              </li>
+              <li class="contact-item-outer" data-ix="new-interaction"><a class="task-project-link contact-info" href="https://github.com/goldfeld">https://github.com/goldfeld</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="w-col w-col-6">
+          <div class="w-clearfix title-wrapper footer-title-wrapper">
+            <div class="logo-text footer">Subscribe to</div>
+            <div class="logo-text footer-logo">Clojure in the Open</div>
+            <div class="weekly-subtitle footer-logo">weekly</div>
+          </div>
+          <div class="footer-slogan">Sign up to get next issues in your inbox</div>
+          <div class="w-form newsletter-form">
+            <form class="w-clearfix" id="wf-form-newsletter" name="wf-form-newsletter" data-name="Newsletter" action="//leakmap.us9.list-manage.com/subscribe/post?u=51575f69926036c55430eaac3&amp;amp;id=db0ae77894">
+              <input class="w-input newsletter-field" id="email" type="email" placeholder="Email Address" name="email" data-name="Email" required="required">
+              <input class="w-button newsletter-button" type="submit" value="Subscribe" data-wait="Wait..." wait="Wait...">
+            </form>
+            <div class="w-form-done success-message">
+              <p>Thank you! You’ll receive an email shortly.</p>
+            </div>
+            <div class="w-form-fail">
+              <p>Oops! Something went wrong while submitting the form :(</p>
+            </div>
+          </div>
+          <div class="contact-info">© 2014 Vic Goldfeld</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/webflow.js"></script>
+  <!--[if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
+</body>
+</html>
